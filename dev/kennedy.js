@@ -802,7 +802,7 @@ function getCourses(onSuccess, onError, hideAlert) {
 }
 
 function getCenters(onSuccess, onError, hideAlert) {
-    let url = getBaseURL() + "/centers";
+    let url = getBaseURL() + "/centers?limit=1000";
     let headers = getAdminHeaders();
     callAPI(url, function (err, response) {
         if (err) {
